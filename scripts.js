@@ -18,6 +18,7 @@ function createQuoteSlide(quote) {
 }
 
 $(document).ready(function () {
+    console.log('console ready');
     var loader = $('.loader');
     loader.show();
 
@@ -83,7 +84,7 @@ function populateSection(carouselSelector, url, prevArrow, nextArrow) {
             $(carouselSelector).append(card);
         });
 
-        $(carouselSelector).slick({
+        $('.carouselSelector').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
             prevArrow: prevArrow,
